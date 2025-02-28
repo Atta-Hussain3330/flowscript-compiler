@@ -1,8 +1,53 @@
-# React + Vite
+# FlowScript Parser
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple web application that parses a custom programming language, **FlowScript**, and highlights its tokens. FlowScript is a fictional language designed to have a readable, easy-to-understand syntax, and it is parsed into a JavaScript-like structure for further processing.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Custom Syntax Parsing:** The app supports parsing specific keywords, loops, conditionals, input/output, and other constructs in FlowScript.
+- **Code Highlighting:** It uses **CodeMirror** for real-time code editing with syntax highlighting for FlowScript.
+- **Symbol Table:** It generates a symbol table to display the line-by-line breakdown of keywords, variables, and values.
+- **Error Handling:** Displays error messages for unrecognized tokens and invalid syntax.
+- **Token List:** Shows a list of all tokens in the program with their classification (e.g., keyword, number, variable, etc.).
+
+## Keywords
+
+Here’s a breakdown of the keywords used in **FlowScript**:
+
+### Conditionals:
+- `checkThis` = `'if'`
+- `maybeThis` = `'else if'`
+- `otherwiseThis` = `'else'`
+
+### Loops:
+- `keepDoing` = `'while'`
+- `repeatTimes` = `'for'`
+- `stopNow` = `'break'`
+- `nextRound` = `'continue'`
+
+### Input/Output:
+- `show` = `'console.log'` (used for printing output)
+- `ask` = `'prompt'` (used to get user input)
+
+### Variable Declaration and Assignment:
+- `declare` = `'let'` or `'const'` (for variable declaration)
+- `assign` = `'='` (assignment operator)
+
+### Boolean Values:
+- `correct` = `'true'`
+- `incorrect` = `'false'`
+
+### Functions:
+- `doThis` = `'function'` (used to define a function)
+- `runThis` = `'call'` (used to call a function)
+
+### Comments:
+- `comment` = `'//'` (single-line comments)
+- `comment` = `'/**/'` (multi-line comments)
+
+## How to Run
+
+1. Clone this repository to your local machine:
+   ```bash
+   git clone https://github.com/your-username/flowscript-parser.git
+   
