@@ -45,9 +45,3 @@ Here’s a breakdown of the keywords used in **FlowScript**:
 - `comment` = `'//'` (single-line comments)
 - `comment` = `'/**/'` (multi-line comments)
 
-## How to Run
-
-1. Clone this repository to your local machine:
-   ```bash
-   git clone https://github.com/your-username/flowscript-parser.git
-   
