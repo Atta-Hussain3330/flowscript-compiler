@@ -49,7 +49,7 @@ const App = () => {
       let trimmedLine = line.trim();
       if (!trimmedLine) return;
 
-      // Handle multiline comments
+      // this is for multiple lines
       if (inMultiLineComment) {
         if (/\*\//.test(trimmedLine)) {
           inMultiLineComment = false;
